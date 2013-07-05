@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+<!--[if IE 8]><html class="ie8"><![endif]-->
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Refugee Camp Mapping</title>
-    <link rel="stylesheet" href="map.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Refugee Camp Mapping - Zaatari</title>
+  <link rel="stylesheet" href="map.css" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href="http://www.unhcr.org/favicon.ico" rel="icon" type="image/x-icon">
 </head>
 <body class="right">
     <div id="header"><div class="limiter">
@@ -13,10 +15,15 @@
 	<h1>Zaatari Refugee  Camp</h1>
     </div></div>
     <div id="content"><div class="limiter">
-        <h2>Base layers:</h2>
+        <h2>Base layers</h2>
         <div id="nav" class="layers">
-          <a data-control="layer" href="#services">Services</a>
+          <a data-control="layer" href="#services">Provision of Services</a>
           <a data-control="layer" href="#address">Addressing sytem</a>
+        </div>
+        <h2>Water and Sanitation</h2>
+        <div id="nav" class="layers">
+          <a data-control="layer" href="#watsan">Taps, bladders and tanks</a>
+	  <a data-control="layer" href="#watsanbuff">200m distance buffers</a>
         </div>
         <h2>Refugee population:</h2>
         <div id="nav" class="layers">
@@ -24,11 +31,6 @@
           <a data-control="layer" href="#poplots">By lots</a>
 	  <a data-control="layer" href="#popdensity">Population density</a>
 	  <a data-control="layer" href="#popethnicity">Ethnicity</a>
-        </div>
-        <h2>Water and Sanitation:</h2>
-        <div id="nav" class="layers">
-          <a data-control="layer" href="#watsan">Taps, bladders and tanks</a>
-	  <a data-control="layer" href="#watsanbuff">200m distance buffers</a>
         </div>
     </div></div>
     <div id="map" class="map"></div>
@@ -49,11 +51,11 @@
     var main = Map('map',{
             api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
             center: {
-                lat: 12.2265,
-                lon: 21.390,
-                zoom: 16
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14
             },
-            zoomRange: [16, 17],
+            zoomRange: [14, 20],
             features: [
                 'zoomwheel',
                 'tooltips',
