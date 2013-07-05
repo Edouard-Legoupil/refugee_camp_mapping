@@ -10,7 +10,7 @@
 <body class="right">
     <div id="header"><div class="limiter">
         <img src="img/unhcr_logo.png">
-	<h1>DJABAL REFUGEE CAMP, Eastern Chad, 2005</h1>
+	<h1>Zaatari Refugee  Camp</h1>
     </div></div>
     <div id="content"><div class="limiter">
         <h2>Base layers:</h2>
@@ -47,7 +47,7 @@
 
         // Make a new map in #map
     var main = Map('map',{
-            api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-admin-roads.jsonp',
+            api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
             center: {
                 lat: 12.2265,
                 lon: 21.390,
@@ -66,82 +66,82 @@
 
         main.layers({
             services: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-services.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
                 center: {
-		 lat: 12.2265,
-                 lon: 21.390,
-                 zoom: 16,
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14,
                  ease: 1000
                 },
                 group: 0,
                 initial: true
             },
             address: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-addressing-system.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
                 center: {
-                    lat: 12.2265,
-                    lon: 21.390,
-                    zoom: 16,
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14,
                     ease: 2000
                 },
                 group: 1
             },
 	    popblocks: {
-		api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-pop-blocks.jsonp',
+		api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
                 center: {
-                    lat: 12.2265,
-                    lon: 21.390,
-                    zoom: 16,
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14,
                     ease: 2000
                 },
                 group: 2
 	    },
 	    poplots: {
-		api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-pop-lots.jsonp',
+		api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
                 center: {
-                    lat: 12.2265,
-                    lon: 21.390,
-                    zoom: 16,
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14,
                     ease: 2000
                 },
                 group: 2
 	    },
 	    popdensity: {
-		api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-density-new.jsonp',
+		api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
                 center: {
-                    lat: 12.2265,
-                    lon: 21.390,
-                    zoom: 16,
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14,
                     ease: 2000
                 },
                 group: 2
 	    },
 	    popethnicity: {
-		api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-ethnicity-updated2.jsonp',
+		api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
                 center: {
-                    lat: 12.2265,
-                    lon: 21.390,
-                    zoom: 16,
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14,
                     ease: 2000
                 },
                 group: 2
 	    },
 	    watsan: {
-		api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-watsan-updated2.jsonp',
+		api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
                 center: {
-                    lat: 12.2265,
-                    lon: 21.390,
-                    zoom: 16,
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14,
                     ease: 2000
                 },
                 group: 3
 	    },
 	    watsanbuff: {
-		api:'http://a.tiles.mapbox.com/v3/unhcr.djabal-watsan-buff.jsonp',
+		api:'http://a.tiles.mapbox.com/v3/unhcr.hdm.jsonp',
                 center: {
-                    lat: 12.2265,
-                    lon: 21.390,
-                    zoom: 16,
+		 lat: 32.2996,
+		 lon: 36.3205,
+                 zoom: 14,
                     ease: 2000
                 },
                 group: 4
